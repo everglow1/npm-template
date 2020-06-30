@@ -1,12 +1,9 @@
-(function (factory) {
-  typeof define === 'function' && define.amd ? define(factory) :
-  factory();
-}((function () { 'use strict';
+'use strict';
 
-  module.exports = {
-    a: 1
-  };
+var foo = 'hello world';
 
-  // console.log(module)
+function main () {
+  console.log(foo);
+}
 
-})));
+module.exports = main;
