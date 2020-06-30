@@ -1,2 +1,1 @@
-const test = require('../bundle')
-console.log('test', test)
+const testFoo = require('../dist/npm-template.umd')

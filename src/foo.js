@@ -1,15 +1,18 @@
-class Point {
-  constructor() {
-
+class TestFoo {
+  constructor(name, age) {
+    this.name = name
+    this.age = age
   }
-  test1() {
-    console.log(1111)
+  getName() {
+    return this.name
   }
-  test2() {
-    console.log(2222)
+  setName(val) {
+    this.name = val
   }
 }
 
-export {
-  Point
+function handle() {
+  console.log('I am handle!')
 }
+
+export { TestFoo }

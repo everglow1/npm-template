@@ -2,7 +2,8 @@
   "name": "npm-template",
   "version": "0.0.1",
   "description": "Templates for developing NPM packages",
-  "main": "index.js",
+  "main": "dist/npm-template.umd.js",
+  "module": "dist/npm-template.es6.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c"
@@ -28,7 +29,8 @@
     "rollup-plugin-babel": "^3.0.7",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-json": "^4.0.0",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-sourcemaps": "^0.6.2"
   },
   "dependencies": {
     "lodash": "^4.17.15",
