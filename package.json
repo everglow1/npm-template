@@ -1,5 +1,5 @@
 {
-  "name": "npm-template",
+  "name": "yzj-npm",
   "version": "0.0.1",
   "description": "Templates for developing NPM packages",
   "main": "dist/npm-template.umd.js",
