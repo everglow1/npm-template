@@ -1,6 +1,7 @@
 import json from 'rollup-plugin-json';
-import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
+import resolve from 'rollup-plugin-node-resolve';
+import babel from 'rollup-plugin-babel';
 
 export default {
   input: 'src/main.js',
@@ -9,10 +10,18 @@ export default {
     format: 'cjs'
   },
   plugins: [
+    commonjs(),
     json(),
     resolve({
-      module: true
+      // 将自定义选项传递给解析插件
+      customResolveOptions: {
+        moduleDirectory: 'node_modules'
+      }
     }),
-    commonjs()
-  ]
+    babel({
+      exclude: 'node_modules/**' // 只编译源代码
+    })
+  ],
+  // 指出应将哪些模块视为外部模块
+  external: ['lodash']
 }
