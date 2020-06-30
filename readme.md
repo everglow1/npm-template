@@ -16,3 +16,7 @@
 - ES6 Module （两端）
 
 #### rollup构建js库
+
+#### pkg.module
+- pkg.main pkg.main 字段指向的是编译后生成的 ES5 版本的代码
+- pkg.module 字段要指向的是一个基于 ES6 模块规范的使用ES5语法书写的模块
