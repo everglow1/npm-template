@@ -1,0 +1,24 @@
+{
+  "name": "npm-template",
+  "version": "0.0.1",
+  "description": "Templates for developing NPM packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/everglow1"
+  },
+  "keywords": [
+    "npm、template"
+  ],
+  "author": "Everglow",
+  "license": "ISC",
+  "engines": {
+    "node": "^10.0.x"
+  },
+  "devDependencies": {
+    "rollup": "^2.18.1"
+  }
+}
