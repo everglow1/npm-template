@@ -1,1 +1,4 @@
-export default 'hello world'
+// export default 'hello world'
+module.exports = {
+  a: 1
+}
